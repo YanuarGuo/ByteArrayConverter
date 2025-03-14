@@ -30,7 +30,7 @@
         {
             txtStringText = new TextBox();
             txtASCII1 = new TextBox();
-            btnConvert = new Button();
+            BtnConvert = new Button();
             txtFileName = new TextBox();
             BtnAddPict = new Button();
             BtnConvertPict = new Button();
@@ -58,15 +58,15 @@
             txtASCII1.Size = new Size(244, 23);
             txtASCII1.TabIndex = 1;
             // 
-            // btnConvert
+            // BtnConvert
             // 
-            btnConvert.Location = new Point(427, 51);
-            btnConvert.Name = "btnConvert";
-            btnConvert.Size = new Size(86, 23);
-            btnConvert.TabIndex = 2;
-            btnConvert.Text = "Convert";
-            btnConvert.UseVisualStyleBackColor = true;
-            btnConvert.Click += btnConvert_Click;
+            BtnConvert.Location = new Point(427, 51);
+            BtnConvert.Name = "BtnConvert";
+            BtnConvert.Size = new Size(86, 23);
+            BtnConvert.TabIndex = 2;
+            BtnConvert.Text = "Convert";
+            BtnConvert.UseVisualStyleBackColor = true;
+            BtnConvert.Click += BtnConvert_Click;
             // 
             // txtFileName
             // 
@@ -119,7 +119,7 @@
             BoxText.Controls.Add(txtASCII1);
             BoxText.Controls.Add(txtStringText);
             BoxText.Controls.Add(cmbFormat);
-            BoxText.Controls.Add(btnConvert);
+            BoxText.Controls.Add(BtnConvert);
             BoxText.Location = new Point(12, 12);
             BoxText.Name = "BoxText";
             BoxText.Size = new Size(526, 100);
@@ -170,7 +170,7 @@
 
         private TextBox txtStringText;
         private TextBox txtASCII1;
-        private Button btnConvert;
+        private Button BtnConvert;
         private TextBox txtFileName;
         private Button BtnAddPict;
         private Button BtnConvertPict;

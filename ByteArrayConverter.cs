@@ -10,18 +10,17 @@ namespace ByteArrayConverter
 {
     public partial class ByteArrayConverter : Form
     {
-        private string selectedFilePath;
+        private string? selectedFilePath;
 
         public ByteArrayConverter()
         {
             InitializeComponent();
         }
 
-        private void btnConvert_Click(object sender, EventArgs e)
+        private void BtnConvert_Click(object sender, EventArgs e)
         {
             string inputText = txtStringText.Text;
 
-            // Pilih format yang diinginkan: "Decimal", "Hex", atau "Binary"
             string? selectedFormat = cmbFormat.SelectedItem?.ToString();
 
             if (string.IsNullOrEmpty(inputText))
@@ -63,7 +62,7 @@ namespace ByteArrayConverter
 
         private void BtnAddPict_Click(object sender, EventArgs e)
         {
-            using OpenFileDialog ofd = new OpenFileDialog()
+            using OpenFileDialog ofd = new()
             {
                 Filter =
                     "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png",
